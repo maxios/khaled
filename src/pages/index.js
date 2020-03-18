@@ -27,7 +27,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Khaled Maher | Software Engineer" />
       <div id="linkedin-profile-badge" style={{
         position: "fixed",
         top: "50%",
