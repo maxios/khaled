@@ -32,7 +32,9 @@ const IndexPage = () => {
         position: "fixed",
         top: "50%",
         left: "50%",
-        transform: "translate(-50%, -50%)"
+        transform: "translate(-50%, -50%)",
+        boxShadow: "0px 0px 52px -20px grey",
+        border: "2px solid lightblue"
       }}></div>
     </Layout>
   )
