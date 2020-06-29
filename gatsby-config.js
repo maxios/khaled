@@ -5,9 +5,32 @@ module.exports = {
     author: `@maxios`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-manifest",
+    "gatsby-plugin-offline",
+    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@atoms": "src/components/atoms",
+          "@molecules": "src/components/molecules",
+          "@organisms": "src/components/organisms",
+          "@constants": "src/constants",
+          "@layouts": "src/layouts",
+          "@pages": "src/pages",
+          "@images": "src/images",
+          "@styles": "src/styles"
+        },
+        extensions: [
+          "js",
+        ],
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
